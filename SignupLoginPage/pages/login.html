@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up / Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Poppins:wght@600&family=Roboto:wght@300&family=Staatliches&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+</head>
+<body>
+    <div class="sign-up-form">
+        <h1> LOG IN</h1>
+        <form action="includes/login.inc.php" method="post">
+            <input type="username" name="uid" class="input-box" placeholder="Username">
+            <input type="password" name="pwd" class="input-box" placeholder="Password">
+            <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer; color: white;"></i>
+            <button type="button" name="signup" class="sign-btn">LOG IN</button>
+            <hr>
+            <button type="button" class="gmail-btn">LOGIN WITH GMAIL</button>
+            <p>Can't remember your Username or Password?<a href ="#"> Click Here </a></p>
+        </form>
+    </div>
+
+</body>
+</html>

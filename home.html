@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function() {
+            $(".toggle").on("click", function(){
+                if($(".item").hasClass("active")){
+                    $(".item").removeClass("active");
+
+                }
+                else{
+                    $(".item").addClass("active");
+
+                }
+            })
+    });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Bebas+Neue&family=Poppins:wght@600&family=Roboto:wght@300&family=Staatliches&family=Teko:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar">
+            <li class="logo"><a href="#">COMPETITIVE LOUNGE</a></li>
+            <li class="item button3"><a href="#"><span class="material-icons">
+                new_releases
+                </span>GLOBAL CHAT</a></li>
+            <li class="item button2"><a href="#">GAMES<span class="material-icons">arrow_drop_down</span></a></li>
+            <li class="item button2"><a href="#">TOURNAMENTS<span class="material-icons">arrow_drop_down</span></a></li>
+            <li class="item button2"><a href="#">LEADERBOARDS<span class="material-icons">arrow_drop_down</span></a></li>
+            <li class="item"><a href="#">EXPLORE</a></li>
+            <li class="icon"><a href="#"><i class="material-icons">search</i></a></li>
+            <li class="icon"><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+            <li class="item button"><a href="SignupLoginPage/pages/login.html">LOGIN</a></li>
+            <li class="item button secondary"><a href="SignupLoginPage/index.html">SIGN UP</a></li>
+            <li class="toggle"><span class="bars"></span></li>
+
+        </ul>
+
+    </nav>
+    <main>
+        <a href="#" style="position:fixed;bottom:0;"></a>
+    </main>
+<div class="wrapper">
+    <!--Slider Box-->
+    <div class="box"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+</div>
+
+
+    <!--Carousel-->
+    <div class="owl-carousel owl-theme">
+        <div class="item1"><img src="images/callofdutyvanguard.png"></div>
+        <div class="item1"><img src="images/warzonepacific.png"></div>
+        <div class="item1"><img src="images/haloinfinite.png"></div>
+        <div class="item1"><img src="images/fortnite.png"></div>
+    </div>
+
+
+
+    <!--JS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--jQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript">
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin: 10,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 1500,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                1000:{
+                    items:6
+                }
+            }
+        });       
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
