@@ -11,7 +11,7 @@ body{
 .navbar{
     background: #222;
     padding: 5px 20px;
-    box-shadow: 0px 0px 5px black;
+    box-shadow: 10px 0px 15px black;
 }
 ul {
     list-style-type: none;
@@ -53,7 +53,6 @@ a:hover{
 }
 .logo a{
     font-size: 20px;
-    
 }
 .button{
     color: white;
@@ -83,7 +82,6 @@ a:hover{
 
 /* mobile menu*/
 
-
 .navbar{
     display: flex;
     flex-wrap: wrap;
@@ -107,7 +105,6 @@ a:hover{
 }
 .toggle{
     cursor: pointer;
-
 }
 .bars{
     background: #999;
@@ -132,16 +129,11 @@ a:hover{
 }
 
 
-
 /* Tablet Menu */
-
-
-
 
 @media all and (min-width:468px){
     .navbar{
         justify-content: center;
-
     }
     .logo{
         flex:1;
@@ -178,8 +170,7 @@ a:hover{
     .button.secondary a:hover{
         color: #ddd;
         background-color: red;
-    }
-    
+    } 
 }
 
 
@@ -207,123 +198,66 @@ a:hover{
     .navbar li.button{
         padding-right:0;
     }
+}
+
+.owl-container {
+    position: fixed;
+    background-color: #171717;
+    width: 100%;
+    height: 600px;
     
-}
 
-/* Utilities */
+}
 .card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
+    position: absolute;
+    width: 80%;
 }
-
-.wrapper{
-    display: flex;
-    flex-wrap: wrap;
+.item1 {
+    margin-left: 25px;
+    margin-right: 0px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    width: fit-content;
+    height: fit-content;
+    background-color: #262626;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px black;
+    padding: 5px 5px;
+}
+.item1:hover {
+    transform: scale(2);
+    cursor: pointer;
+}
+h1 {
+    padding-top: 5px;
+    text-align: justify;
+    margin-top: 30px;
+    color: white;
+    font-weight: 20;
+    font-family: sans-serif;
     text-align: center;
 }
-.wrapper>* {
-    padding: 10px;
-    margin: 10px;
-    flex: 1 100%;
-    border-radius: 10px;
-}
-/*top left box*/
-.box {
+.more-soon-button {
+    overflow: hidden;
     position:absolute;
-    height: 500px;
-    top:8.5%;
-    left: 3%;
-    width: 50%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-/*middle left box*/
-.box2 {
-    position: absolute;
-    height: 100px;
-    width: 50%;
-    padding: 20px 150px;
-    top: 62%;
-    left: 3%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-/*top right box*/
-.box3 {
-    position: absolute;
-    height: 400px;
-    width: 20%;
-    padding: 20px 100px;
-    left: 75%;
-    top: 8.5%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-/*bottom right box*/
-.box5 {
-    position: absolute;
-    height: 425px;
-    width: 20%;
-    padding: 20px 100px;
-    left: 75%;
-    top: 52%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-/* Middle Long box */
-.box4 {
-    position: absolute;
-    height: 850px;
-    width: 20%;
-    padding: 20px 100px;
-    left: 54%;
-    top: 8.5%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-/* bottom left Box */
-.box6 {
-    position: absolute;
-    height: 213px;
-    width: 50%;
-    padding: 20px 300px;
-    top: 74.2%;
-    left: 3%;
-    margin: 20px;
-    background-color: #1f1f1f;
-    border-radius: 1em;
-    box-shadow: 0px 0px 6px black;
-}
-
-/* carousel */
-.item1{
-    left: 5%;
-    width: auto;
-    border-color: grey;
-    border-style: solid;
+    top: 48%;
+    margin: 0 0 0 100rem;
+    background-color: #171717;
+    border: 1px solid red;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 30px;
     box-shadow: 0px 0px 5px black;
 }
-.owl-carousel{
-    overflow:auto;
-    position: absolute;
-    padding-top: 10%;
-    padding-right: 54%;
-    padding-left: 12%;
+.more-soon-button:hover {
+    transform: scale(1.1);
+    background-color: red;
+    cursor: pointer;
+}
+.owl-carousel {
+    float: left;
+    width: 100%;
+    height: 500px;
     
 }
-.item1:hover{
-    transform:scale(0.95);
-}
-/* Footer */
-
